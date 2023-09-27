@@ -21,7 +21,6 @@ output "cluster_name" {
   value       = module.eks.cluster_name
 }
 
-
 output "eks_command" {
   description = "Command to configure kubectl to connect to EKS"
   value       = "aws eks --region ${var.region} update-kubeconfig --name ${module.eks.cluster_name}"
